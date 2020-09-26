@@ -494,7 +494,7 @@ extern LXSAMD21DMX SAMD21DMX;
  	#define use_optional_sercom_macros 1
  #endif
 
-//#define use_optional_sercom_macros 2
+#define use_optional_sercom_macros 1
 
 #if defined( use_optional_sercom_macros )
 
@@ -502,8 +502,8 @@ extern LXSAMD21DMX SAMD21DMX;
 	//********************** optional sercom macros 1 ********************** 
 	// --might be used for Arduino Zero sercom2 pins 3 and 4
 
-	#define PIN_DMX_RX (3ul)
-	#define PIN_DMX_TX (4ul)
+	#define PIN_DMX_RX (A5)
+	#define PIN_DMX_TX (A4)
 	#define PAD_DMX_RX SERCOM_RX_PAD_1
 	#define PAD_DMX_TX UART_TX_PAD_0
 
